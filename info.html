@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Informações</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script>
+        window.onload = function() {
+    document.querySelector(".menu_mobile").addEventListener("click", function(){
+        if(document.querySelector(".cbc nav ul").style.display == 'flex') {
+            document.querySelector(".cbc nav ul").style.display = 'none';
+           } else {
+                document.querySelector(".cbc nav ul").style.display = 'flex';
+            }
+    });
+};
+    </script>
+</head>
+<body>
+    <header>
+        <div class="cbc">
+            <div class="logo">
+                <a href="home.html"><img src="mathlogo.png"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="calculadoras.html">Calculadora</a></li>
+                        <li class="active"><a href="info.html">Informações</a></li>
+                    </ul>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+            </div>
+             </nav>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Informações
+        </h1>
+        <p>
+            Para evitar dúvidas com relação ao uso do site, eis aqui informações relevantes que provavelmente te ajude a usar a calculadora.
+            Qualquer crítica quanto à responsividade e design do site é bem aceita, pois o projeto ainda está em fase de desenvolvimento e almejamos a satisfação total dos usuários.
+        </p>
+        <p>
+            - Após inserir o valor dos coeficientes, basta clicar no botão "calcular" para que a calculadora exiba a fórmula visualmente, os valores das duas raízes e o valor de delta. <br><br>
+            - Caso queira exibir o valor de delta e o produto "2.a" na fórmula, basta clicar na seta que aponta para a direita assim alterando-a, para voltar a fórmula anterior, basta clicar na seta que aponta para a esquerda. <br><br>
+            - O botão "Limpar" serve para limpar os campos onde os coeficientes foram escritos. <br><br>
+            - Se o valor de Delta pertence ao conjunto dos números complexos, uma menssagem será exibida no campo "resultado" dizendo que delta não pertence aos reais. Tal fato ocorre, pois a raíz de qualquer número negativo (n < 0) é considerado um número "imaginário" já que ele não possui uma solução real.
+        </p>
+        </main>
+
+</body>
+</html>

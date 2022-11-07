@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Calculadoras</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadoras.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="calc.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cbc">
+            <div class="logo">
+                <a href="home.html"><img src="mathlogo.png"></a>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="calculadoras.html">Calculadora</a></li>
+                        <li><a href="info.html">Informações</a></li>
+                    </ul>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+            </div>
+             </nav>
+        </div>
+    </header>
+    <main>
+        <div class="equacao">
+
+            <h1 class="titulos"> Equação de segundo grau</h1>
+
+            <form>
+                <input type="number" name="a" id="a" placeholder="Digite o valor de a:" autocomplete="off">
+                <input type="number" name="b" id="b" placeholder="Digite o valor de b:" autocomplete="off">
+                <input type="number" name="c" id="c" placeholder="Digite o valor de c:" autocomplete="off">
+                <input type="button" name="calcular" class="butao" value="Calcular" onclick="calculo()">
+                <input type="reset" name="limpar" class="butao" value="limpar">
+            </form>
+
+                <div class="formula">
+                    <h1 id="f1">-b ± √b²-4.a.c</h1>
+                    <h1 class="bord" id="bord"></h1>
+                    <h1 id="f2">2.a</h1>
+                </div>
+
+                <div class="formulaM">
+                    <h1 id="f1m">-b ± √b²-4.a.c</h1>
+                    <h1 class="bord" id="bordm"></h1>
+                    <h1 id="f2m">2.a</h1>
+                </div>
+
+                <div class="campRes">
+                    <input type="button" name="calcular" class="butaoR" value="<" onclick="calculo()">
+                    <input type="button" name="calcular" class="butaoR" value=">" onclick="formular()">
+                </div>
+
+            <div class="resultados">
+
+                <div class="resultado">
+                    <div class="borda"></div>
+                    <strong class="resu">Resultado: </strong><div id="res"></div>
+                </div>
+
+                <div class="delta">
+                    <div class="borda"></div>
+                    <strong class="resu">Δ Delta: </strong><div id="delta"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
